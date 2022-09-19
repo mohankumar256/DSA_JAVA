@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class is_prime {
+public class is_Prime {
 
 	public static void main(String[] args) {
 		Scanner scn = new Scanner(System.in);
@@ -11,10 +11,10 @@ public class is_prime {
 			int num = scn.nextInt();
 
 			int count = 0;
-			for (int div = 2; div * div <= num; div++) {
+			for (int div = 2; div * div <= num; div++) { // dividing number till root num
 				if (num % div == 0) {
 					count++;
-					break;
+					break; // breaking from loop if number gets divided
 				}
 			}
 
