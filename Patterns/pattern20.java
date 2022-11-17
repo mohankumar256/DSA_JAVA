@@ -11,7 +11,7 @@ public class pattern20 {
 			for (int j = 1; j <= n; j++) {
 				if (i >= n / 2 + 1 && (i == j || i + j == n + 1))
 					System.out.print("*\t");
-				else if (i < n && (j == 1 || j == n))
+				else if (j == 1 || j == n)
 					System.out.print("*\t");
 				else
 					System.out.print("\t");
