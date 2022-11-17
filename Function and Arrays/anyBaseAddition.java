@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class anyBaseAddition {
 
-	public static int addition(int base, int num1, int num2) {
+	public static int getSum(int base, int num1, int num2) {
 		int sum = 0;
 		int carry = 0;
 		int power = 1; // 10^0
@@ -33,7 +33,7 @@ public class anyBaseAddition {
 		int num1 = scn.nextInt();
 		int num2 = scn.nextInt();
 
-		int result = addition(base, num1, num2);
+		int result = getSum(base, num1, num2);
 		System.out.println(result);
 	}
 
