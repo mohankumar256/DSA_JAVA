@@ -1,27 +1,24 @@
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
-public class reverseAnArray {
+public class inverseOfAnArray {
 	public static void display(int[] a) {
 		StringBuilder sb = new StringBuilder();
 
 		for (int val : a) {
-			sb.append(val + " ");
+			sb.append(val + "\n");
 		}
 		System.out.println(sb);
 	}
 
-	public static void reverse(int[] a) {
-		int left = 0;
-		int right = a.length - 1;
-		while (left < right) {
-			int temp = a[left];
-			a[left] = a[right];
-			a[right] = temp;
+	public static int[] inverse(int[] a) {
+		int[] inv = new int[a.length];
 
-			left++;
-			right--;
+		for (int i = 0; i < inv.length; i++) {
+			inv[a[i]] = i;
 		}
+
+		return inv;
 	}
 
 	public static void main(String[] args) throws Exception {
@@ -33,7 +30,7 @@ public class reverseAnArray {
 			a[i] = Integer.parseInt(br.readLine());
 		}
 
-		reverse(a);
-		display(a);
+		int[] inv = inverse(a);
+		display(inv);
 	}
 }
