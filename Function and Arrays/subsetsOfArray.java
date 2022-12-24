@@ -4,7 +4,7 @@ public class subsetsOfArray {
 
 	public static void printSubsets(int[] arr) {
 
-		int limit = (1 << arr.length);  //2^3
+		int limit = (1 << arr.length); // 2^3
 
 		for (int i = 0; i < limit; i++) {
 
@@ -24,7 +24,6 @@ public class subsetsOfArray {
 			System.out.println(subsetString);
 
 		}
-
 	}
 
 	public static void main(String[] args) throws Exception {
@@ -40,5 +39,4 @@ public class subsetsOfArray {
 
 		printSubsets(arr);
 	}
-
 }
